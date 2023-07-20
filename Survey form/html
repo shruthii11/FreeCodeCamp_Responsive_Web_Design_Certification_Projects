@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="style sheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please fill out this form with the required information</p>
+    <form action='https://register-demo.freecodecamp.org' id="survey-form">
+    <fieldset>
+      <label id="name-label">Enter your name : <input type="text" name="first-name"  id="name"   required placeholder=" (name)"/></label>
+ <label id="email-label" >Enter your email : <input type="email" name="email"   id="email" placeholder="(123abc@gmail.com)" required/></label>
+  <label id="number-label">Enter your age (optional) : <input type="number"  placeholder="(age)"name="age" min="13" max="120" id="number" required/></label>
+</fieldset>
+<fieldset>
+  <label>Select your branch
+    <select name="dropdown" id="dropdown">
+      <option value="">(select one)</option>
+      <option value="1">CSE</option>
+      <option value="2">AI</option>
+      <option value="3">ML</option>
+      <option value="4">ISE</option>
+    </select></label>
+  </fieldset>
+  <fieldset>select your position : 
+    <label><input type="radio" name="role" id="value" value="role" class="inline" />Student </label>
+    <label><input type="radio" name="role" id="value" value="role" class="inline" />Working </label><br><label>Programming languages you know : </label>
+      <label><input type="checkbox" id="value" value="lang" name="skill" class="inline" /> C</label>
+       <label><input type="checkbox" id="value" value="lang" name="skill" class="inline" /> C++</label>
+        <label><input type="checkbox" id="value" value="lang" name="skill" class="inline" /> Java</label>
+         <label><input type="checkbox"  id="value" value="lang" name="skill" class="inline" /> Python</label>
+          <label><input type="checkbox"  id="value" value="lang" name="skill" class="inline" /> C# </label>
+           <label><input type="checkbox" id="value" value="lang" name="skill" class="inline" /> Javascript </label></fieldset><fieldset>
+           <label>Provide a bio:
+          <textarea name="bio" rows="3" cols="30" placeholder="I watch anime in freetime..."></textarea>
+        </label></fieldset>
+        <input type="submit" value="Submit" id="submit" />
+        </form>
+        </body>
+        </html>
